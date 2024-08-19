@@ -51,15 +51,16 @@ public class ValidacoesListaTests
     [Fact]
     public void DeveMultiplicarOsElementosDaListaPor2()
     {
-        //TODO: Implementar método de teste
-
         // Arrange
         var lista = new List<int> { 5, 7, 8, 9 };
+        var numeroMultiplicador = 2;
         var resultadoEsperado = new List<int> { 10, 14, 16, 18 };
-        
+
         // Act
+        var resultado = _validacoes.MultiplicarNumerosLista(lista, numeroMultiplicador);
 
         // Assert
+        Assert.Equal(resultadoEsperado, resultado);
     }
 
     [Fact]
